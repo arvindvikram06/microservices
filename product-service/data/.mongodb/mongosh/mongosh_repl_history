@@ -1,0 +1,9 @@
+db.adminCommand({getParameter: 1, authenticationMechanisms: 1})
+docker logs mongodb
+db.getUsers()
+db.getusers()
+use admin
++docker stop 648923c70421
+docker stop 648923c70421
+listDatabases
+show databases
