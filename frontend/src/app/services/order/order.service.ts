@@ -13,12 +13,13 @@ export class OrderService {
   }
 
   orderProduct(order: Order): Observable<string> {
+    console.log(order)
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json'
       }),
       responseType: 'text' as 'json'
     };
-    return this.httpClient.post<string>('http://localhost:9000/api/v1/order', order, httpOptions);
+    return this.httpClient.post<string>('http://localhost:9000/api/v1/orders', order, httpOptions);
   }
 }
